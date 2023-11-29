@@ -12,5 +12,28 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  
+  const tutorials1= tutorials.map((string)=>{
+  return string.split(' ').map((word)=> word[0].toUpperCase() + word.slice(1)).join(' ')
+
+  })
+ 
+  return tutorials1;
+  
 }
+
+
+
+
+//const array1 = [1, 4, 9, 16];
+
+// Pass a function to map
+//const map1 = array1.map((x) => {
+
+
+
+ // console.log(x)
+//return x * 3;
+//})
+
+//console.log(map1);
